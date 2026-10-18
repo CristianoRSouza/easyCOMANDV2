@@ -1,0 +1,595 @@
+{
+  "globais": [
+    "APP_GUARD → SessionThrottlerGuard",
+    "APP_GUARD → AuthGuard",
+    "APP_FILTER → HttpExceptionFilter"
+  ],
+  "rotas": [
+    {
+      "rota": "DELETE /menus/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "DELETE /menus/submenus/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "DELETE /pix/credentials",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "DELETE /rbac/assignments/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "DELETE /rbac/overrides/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "DELETE /rbac/permissions/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "DELETE /rbac/roles/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "DELETE /user-company-access/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "DELETE /users/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /audit/activity",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /audit/companies",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /audit/easyfoodpay",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /audit/permissions",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /audit/permissions/count",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /audit/permissions/export",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /auth/me",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /billing/ai/cache-usage",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /billing/ai/credit-packages",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /billing/ai/model-costs",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /billing/company-plans",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /billing/config",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /billing/config/reference-usd-brl",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /billing/module-plans",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /billing/stripe-mode",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /billing/totem-licenses",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /companies",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /dashboard/kpis",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /health",
+      "isPublic": true,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /health/live",
+      "isPublic": true,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /menus",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /menus/access",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /menus/modules",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /menus/permissions",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /modules/easycommandpay/agents",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /modules/easycommandpay/kpis",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /modules/easycommandpay/totems",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /modules/easyml/ai-usage",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /modules/easyml/connections",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /modules/easyml/kpis",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /modules/easyml/orders",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /pix/credentials",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /pix/endpoints",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /pix/events",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /pix/events/feed",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /pix/stores",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/access-denied/count",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/assignments",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/audit",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/companies",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/modules",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/my-permissions",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/overrides",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/permissions",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/roles",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/stores",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /rbac/users",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /stores",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /user-company-access",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /user-company-access/companies",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /user-company-access/users",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "GET /users",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PATCH /billing/ai/credit-packages/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PATCH /billing/ai/model-costs/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PATCH /billing/config/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PATCH /billing/module-plans/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PATCH /user-company-access/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PATCH /users/:id/active",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /auth/login",
+      "isPublic": true,
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /auth/logout",
+      "httpCode": 204,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /auth/refresh",
+      "isPublic": true,
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /billing/ai/credit-packages/sync-stripe",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /billing/stripe-sync-plans",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /menus",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /menus/:id/submenus/reorder",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /menus/reorder",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /menus/submenus",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /pix/endpoints/deactivate",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /pix/endpoints/register",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /rbac/access-denied",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /rbac/assignments",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /rbac/modules",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /rbac/overrides",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /rbac/permissions",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /rbac/roles",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /rbac/roles/:id/duplicate",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /user-company-access",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /users/:id/demote",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "POST /users/:id/promote",
+      "httpCode": 200,
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PUT /billing/stripe-mode",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PUT /menus/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PUT /menus/submenus/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PUT /pix/credentials",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PUT /rbac/modules/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PUT /rbac/permissions/:id",
+      "guards": [],
+      "interceptors": []
+    },
+    {
+      "rota": "PUT /rbac/roles/:id",
+      "guards": [],
+      "interceptors": []
+    }
+  ],
+  "openapi": {
+    "paths": {
+      "/audit/activity": "5be64eb28aaf5870",
+      "/audit/companies": "da401ed3e462d4bc",
+      "/audit/easyfoodpay": "5c1c0c761b74027e",
+      "/audit/permissions": "7f07045e159162b0",
+      "/audit/permissions/count": "617b1c2451f4a190",
+      "/audit/permissions/export": "8beaec51a146f0db",
+      "/auth/login": "4cfb64379d1ab6cc",
+      "/auth/logout": "c723b31c39d3d359",
+      "/auth/me": "03d16e21f80cde18",
+      "/auth/refresh": "80ed5536ec5bc91f",
+      "/billing/ai/cache-usage": "ff7f94b71fce66e8",
+      "/billing/ai/credit-packages": "5d00224178c2718e",
+      "/billing/ai/credit-packages/sync-stripe": "1ef4716d9c3985c0",
+      "/billing/ai/credit-packages/{id}": "ef99f8a62a14e9d9",
+      "/billing/ai/model-costs": "bfb24ada2dcd1ee1",
+      "/billing/ai/model-costs/{id}": "a58b39149273f8df",
+      "/billing/company-plans": "0d4b3d9166a915e0",
+      "/billing/config": "3599c67876e35c0e",
+      "/billing/config/reference-usd-brl": "15eea5ddb4a6186e",
+      "/billing/config/{id}": "72cd6e8640043308",
+      "/billing/module-plans": "6b0ef0840270795e",
+      "/billing/module-plans/{id}": "c437274b0d5de4c1",
+      "/billing/stripe-mode": "7266bbddb0b2ca5e",
+      "/billing/stripe-sync-plans": "57c545707c91f161",
+      "/billing/totem-licenses": "c1821aafcd87215a",
+      "/companies": "1f000142f26ae832",
+      "/dashboard/kpis": "6532515e25dacc80",
+      "/health": "5caa639e1ff557ee",
+      "/health/live": "7b733f12bb6024d8",
+      "/menus": "360ed23da471294d",
+      "/menus/access": "f7f4549fdbb84d98",
+      "/menus/modules": "378fa85f5eacf083",
+      "/menus/permissions": "82e38c2869b0a74f",
+      "/menus/reorder": "d7ff26366663e2ae",
+      "/menus/submenus": "d8414c1e0cadc093",
+      "/menus/submenus/{id}": "dfdf3effd03fad3a",
+      "/menus/{id}": "8463760aa0ec7300",
+      "/menus/{id}/submenus/reorder": "14bff0b670649e62",
+      "/modules/easycommandpay/agents": "81eb1fa2c9f6bfbb",
+      "/modules/easycommandpay/kpis": "8f9a5f0b1faf4df0",
+      "/modules/easycommandpay/totems": "672ad7d7d2836612",
+      "/modules/easyml/ai-usage": "9027b35211aabc7d",
+      "/modules/easyml/connections": "ae8a2cb6c31002b4",
+      "/modules/easyml/kpis": "d273997f74589865",
+      "/modules/easyml/orders": "172ebd664c3af979",
+      "/pix/credentials": "cf92b0fa46559292",
+      "/pix/endpoints": "19de8518faa602b9",
+      "/pix/endpoints/deactivate": "095154e7312eeb76",
+      "/pix/endpoints/register": "f68ac62a2a1f0080",
+      "/pix/events": "55cac48635aa65b5",
+      "/pix/events/feed": "1a3591e675017c78",
+      "/pix/stores": "b3ae584fe838074e",
+      "/rbac/access-denied": "e7a8ce62418de82a",
+      "/rbac/access-denied/count": "945748dcf3d42d28",
+      "/rbac/assignments": "7225e8eba5d117aa",
+      "/rbac/assignments/{id}": "71c506aa2359ebba",
+      "/rbac/audit": "14c5358602c787b6",
+      "/rbac/companies": "3e44611ca0850aad",
+      "/rbac/modules": "1848acbbb731d4b6",
+      "/rbac/modules/{id}": "57261d6b0c25e8e6",
+      "/rbac/my-permissions": "35725c2f699fb886",
+      "/rbac/overrides": "5245b6b61e9ce183",
+      "/rbac/overrides/{id}": "a9c27fd896fcda69",
+      "/rbac/permissions": "7e168b5659660b0f",
+      "/rbac/permissions/{id}": "a07f758b274866fb",
+      "/rbac/roles": "9098c32578aac0c3",
+      "/rbac/roles/{id}": "ac1aa47135c02f8f",
+      "/rbac/roles/{id}/duplicate": "6c5a4654fa3a1beb",
+      "/rbac/stores": "7b46c0c85d934566",
+      "/rbac/users": "bb0260a72c97f19c",
+      "/stores": "f5e00a97f9af8d84",
+      "/user-company-access": "b6f83ea11f737348",
+      "/user-company-access/companies": "286f982091879d6b",
+      "/user-company-access/users": "baf5fa0dfe852e5c",
+      "/user-company-access/{id}": "7d20e8a3b6fb0974",
+      "/users": "f58c398b60e42148",
+      "/users/{id}": "2986cfedf92dd25d",
+      "/users/{id}/active": "3aecd8d7deae8f70",
+      "/users/{id}/demote": "c45ee3e651ec613c",
+      "/users/{id}/promote": "103966b320871340"
+    },
+    "schemas": "44136fa355b3678a",
+    "tags": []
+  }
+}

@@ -1,0 +1,18 @@
+# Contexto de build enxuto — e, sobretudo, sem segredos.
+# `.env` fora: um `COPY . .` com ele dentro grava as credenciais numa camada da imagem.
+.env
+.env.*
+!.env.example
+web.env
+
+node_modules
+.next
+coverage
+test-results
+playwright-report
+tests
+.trava-build-visual
+*.tsbuildinfo
+*.log
+.git
+README.md

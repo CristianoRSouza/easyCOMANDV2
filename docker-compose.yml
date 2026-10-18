@@ -1,0 +1,36 @@
+# EasyControl V2 — sobe a API e o web juntos, como em produção (rede interna entre os dois).
+#
+#   cp api/.env.example api/api.env   # preencher com os valores do cofre
+#   docker compose up --build
+#   → web em http://localhost:3000 (a API não é exposta para fora: só o web fala com ela)
+services:
+  api:
+    build:
+      context: ./api
+      args:
+        BUILD_ID: ${BUILD_ID:-dev}
+    image: easysoftsistemas/easycontrol-api:${TAG:-dev}
+    env_file:
+      - ./api/api.env
+    environment:
+      PORT: "3030"
+    restart: unless-stopped
+    expose:
+      - "3030"
+
+  web:
+    build:
+      context: ./web
+      args:
+        BUILD_ID: ${BUILD_ID:-dev}
+    image: easysoftsistemas/easycontrol-web:${TAG:-dev}
+    environment:
+      EASYCONTROL_API_URL: http://api:3030
+      # Em produção atrás de HTTPS: true. Só use false para testar em http://localhost.
+      SESSION_COOKIE_SECURE: ${SESSION_COOKIE_SECURE:-true}
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    restart: unless-stopped

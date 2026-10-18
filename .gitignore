@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.next/
+out/
+coverage/
+test-results/
+playwright-report/
+comparacao-visual/
+*.tsbuildinfo
+*.log
+
+# segredos — nunca versionar (só os .env.example)
+.env
+.env.*
+!.env.example
+api.env
+web.env

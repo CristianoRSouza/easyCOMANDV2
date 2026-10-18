@@ -1,0 +1,15 @@
+# Contexto de build enxuto — e, sobretudo, sem segredos.
+# `.env` fora: um COPY com ele dentro gravaria as credenciais numa camada da imagem.
+.env
+.env.*
+!.env.example
+api.env
+
+node_modules
+dist
+coverage
+test
+scripts
+*.log
+.git
+README.md
